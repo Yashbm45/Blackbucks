@@ -1,0 +1,79 @@
+.management-profiles-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .management-card {
+    display: flex;
+    flex-direction: column;  /* Change to vertical layout */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    width: 100%;
+  }
+  
+  .management-photo {
+    width: 100%;
+    padding: 20px;
+    text-align: center;  /* Center the image */
+  }
+  
+  .management-photo img {
+    width: 250px;  /* Adjust the width of the image */
+    height: 350px;  /* Keep image dimensions uniform */
+    object-fit: cover;  /* Ensure the image maintains aspect ratio */
+    /* border-radius: 50%; */
+  }
+  
+  .management-bio {
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .management-bio h3 {
+    font-size: 1.2rem;
+  }
+
+.management-bio h4{
+    font-size: 1rem;
+}
+
+.management-bio span {
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+  
+  .management-bio p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+
+@media (max-width: 768px) {
+    .management-profiles-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+}
+  @media (max-width: 480px) {
+    .management-profiles-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+}

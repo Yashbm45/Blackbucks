@@ -1,0 +1,222 @@
+/* About Section */
+.about-section {
+  padding: 10px;
+  padding-left: 120px;
+  background-color: #f9f9f9;
+  color: black;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-title h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.section-title p {
+  font-size: 18px;
+  color: #555;
+  padding-bottom: 20px;
+}
+
+/* Founder Details */
+.founder-details {
+  display: flex;
+  gap: 70px;
+  /* justify-content: center;
+  align-items: center; */
+  /* gap: 40px;
+  margin-bottom: 40px; */
+}
+
+.founder-photo {
+  display: inline-block;
+  align-items: start;
+}
+
+.founder-photo img {
+  border-radius: 10%;
+  width: 250px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.founder-bio {
+  max-width: 500px;
+}
+
+.founder-bio h3 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
+
+.founder-bio p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.founder-profiles-container{
+  display: grid;
+  grid-template-columns: 250px 250px; 
+  /* 3 columns with 200px, 1fr, and 2fr */ 
+  gap: 20px;
+  padding: 10px;
+  margin: 0 auto 0px auto;
+}
+
+/* Portfolio Details */
+.portfolio-details {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.portfolio-details h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.portfolio-stats {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.stat {
+  width: 500px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.stat h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.stat p {
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 5px;
+    padding-left: 10px;
+  }
+  .section-title h2 {
+    font-size: 28px;
+  }
+
+  .section-title p {
+    font-size: 16px;
+  }
+
+  .founder-details {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .founder-photo img {
+    width: 200px;
+    height: 280px;
+  }
+
+  .founder-bio {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .founder-bio h3 {
+    font-size: 24px;
+  }
+
+  .founder-bio p {
+    font-size: 14px;
+  }
+
+  .founder-profiles-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .portfolio-details h3 {
+    font-size: 24px;
+  }
+
+  .portfolio-stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .stat {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .stat h4 {
+    font-size: 18px;
+  }
+
+  .stat p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title h2 {
+    font-size: 24px;
+  }
+
+  .section-title p {
+    font-size: 14px;
+  }
+
+  .founder-photo img {
+    width: 180px;
+    height: 250px;
+  }
+
+  .founder-bio h3 {
+    font-size: 20px;
+  }
+
+  .founder-bio p {
+    font-size: 12px;
+  }
+
+  .founder-profiles-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .portfolio-details h3 {
+    font-size: 20px;
+  }
+
+  .portfolio-stats {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .stat {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .stat h4 {
+    font-size: 16px;
+  }
+
+  .stat p {
+    font-size: 12px;
+  }
+}

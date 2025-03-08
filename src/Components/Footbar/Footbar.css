@@ -1,0 +1,106 @@
+/* Footer Styles */
+.footer {
+    background-color: #C5BAFF !important;
+    background-image: url(https://img.freepik.com/free-photo/dark-geometric-background-with-copy-space_24972-1816.jpg?ga=GA1.1.1620629195.1732974353&semt=ais_hybrid);
+    color: white;
+    padding: 20px 10px;
+    text-align: left;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex: 1;
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
+
+  .footer-section-about {
+    background-color: inherit;
+    width: 30%;
+  }
+
+  footer-section-contact {
+    background-color: inherit;
+  }
+  
+  .footer-section h2 {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section p, .footer-section ul {
+    font-size: 1rem;
+    color: white;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    color: white;
+  }
+  
+  .footer-section ul li {
+    margin: 5px 0;
+    color: white;
+  }
+  
+  .footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section ul li a:hover {
+    color: grey;
+  }
+  
+  /* Social Icons */
+  .social-icons a {
+    margin-right: 20px;
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: grey;
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .footer-bottom p {
+    color: black;
+    font-size: 1rem;
+    margin-top: 0px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .footer-section-about{
+      display: none;
+    }
+    .footer-section {
+      margin-bottom: 30px;
+    }
+  
+    .social-icons {
+      margin-top: 20px;
+    }
+}

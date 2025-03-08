@@ -1,0 +1,118 @@
+/* Courses Section */
+.courses {
+  padding: 50px;
+  background-color: #fffbfb40;
+  background-image: url(https://img.freepik.com/free-vector/gradient-white-monochrome-background_23-2148996241.jpg?ga=GA1.1.1620629195.1732974353&semt=ais_hybrid);
+}
+
+/* About Section */
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0px;
+  text-align: center;
+  opacity: 0;
+  animation: fadeInUp 1s forwards;
+}
+
+.about .section-title h2 {
+  font-size: 2rem;
+  margin-bottom: 0px;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+.section-title h2 {
+  font-size: 2.5em;
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  opacity: 0;
+  animation: fadeInUp 1s forwards;
+}
+
+.courses-list {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: none;
+}
+
+.course {
+  background-color: #fff;
+  padding: 20px;
+  width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s forwards;
+}
+
+.course h3 {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.course p {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #007bff;
+  color: white;
+  padding-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hover effect for the CTA button */
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+/* Sequential Animation for each course */
+.course:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.course:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.course:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+@media (max-width: 768px) {
+  .courses {
+    padding: 20px;
+  }
+
+  .courses-list {
+    flex-direction: column;
+  }
+
+  .course {
+    width: 100%;
+  }
+}

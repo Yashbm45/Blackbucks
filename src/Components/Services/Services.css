@@ -1,0 +1,76 @@
+/* Services Section Styling */
+.services-section {
+    padding: 50px 10px;
+    background-color: #E8F9FF !important;
+    background-image: url(https://img.freepik.com/free-vector/gradient-white-monochrome-background_23-2148996241.jpg?ga=GA1.1.1620629195.1732974353&semt=ais_hybrid);
+    text-align: center;
+    color: black;
+  }
+  
+  .section-title h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .section-title p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    line-height: 1.6;
+  }
+  
+  /* Container for the services */
+  .services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  /* Individual service card */
+  .service {
+    width: 22%;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .service-icon {
+    font-size: 3rem;
+    color: rgb(85, 180, 224);
+    margin-bottom: 20px;
+  }
+  
+  .service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .service p {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* Responsive design for mobile */
+  @media (max-width: 768px) {
+    .service {
+      width: 45%;
+      margin: 20px 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .service {
+      width: 80%;
+      margin: 20px auto;
+    }
+  }
+  

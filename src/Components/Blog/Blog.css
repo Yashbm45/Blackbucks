@@ -1,0 +1,128 @@
+/* Blog Section */
+.blog-section {
+  padding: 40px 0;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.section-title p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Blog Posts Layout */
+.blog-posts {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+/* Blog Post Styling */
+.blog-post {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Make sure the blog post doesn't stretch too far */
+}
+
+/* Blog Title */
+.blog-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Blog Summary */
+.blog-summary {
+  font-size: 16px;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Blog Date */
+.blog-date {
+  font-size: 14px;
+  color: #888;
+  margin-top: 15px;
+}
+
+/* Read More Link */
+.read-more {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design for Tablets and Smaller Screens */
+@media (max-width: 1024px) {
+  .blog-posts {
+    flex-direction: column; /* Stack blog posts vertically */
+    padding: 0 10px; /* Adjust padding */
+  }
+
+  .blog-post {
+    width: 100%; /* Ensure blog posts take full width */
+    margin-bottom: 20px; /* Add spacing between posts */
+  }
+
+  .section-title h2 {
+    font-size: 30px; /* Adjust title font size */
+  }
+
+  .section-title p {
+    font-size: 16px; /* Adjust description font size */
+  }
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 768px) {
+  .blog-section {
+    padding: 20px 0; /* Adjust padding */
+  }
+
+  .blog-posts {
+    flex-direction: column; /* Stack blog posts vertically */
+    gap: 20px; /* Adjust gap */
+  }
+
+  .blog-post {
+    width: 100%; /* Ensure blog posts take full width */
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .blog-title {
+    font-size: 20px; /* Smaller title font size */
+  }
+
+  .blog-summary {
+    font-size: 14px; /* Smaller summary font size */
+  }
+
+  .blog-date {
+    font-size: 12px; /* Smaller date font size */
+  }
+
+  .read-more {
+    font-size: 12px; /* Smaller font size for the read more link */
+  }
+}
