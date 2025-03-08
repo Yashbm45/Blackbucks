@@ -1,69 +1,72 @@
 /* Blog Section */
 .blog-section {
-  padding: 40px 0;
+  padding: 2rem 0;
   background-color: #f9f9f9;
-  display: flex;
-  flex-direction: column;
+  text-align: center;
 }
 
 .section-title {
-  text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 2rem;
 }
 
 .section-title h2 {
-  font-size: 36px;
+  font-size: 2.5rem;
   font-weight: bold;
+  color: #333;
 }
 
 .section-title p {
-  font-size: 18px;
+  font-size: 1.25rem;
   color: #555;
 }
 
 /* Blog Posts Layout */
 .blog-posts {
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 /* Blog Post Styling */
 .blog-post {
   background-color: #fff;
   border-radius: 8px;
-  padding: 20px;
+  padding: 1.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 100%; /* Make sure the blog post doesn't stretch too far */
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Blog Title */
+.blog-post:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
 .blog-title {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #333;
+  margin-bottom: 0.75rem;
 }
 
-/* Blog Summary */
 .blog-summary {
-  font-size: 16px;
+  font-size: 1rem;
   color: #555;
-  margin-top: 10px;
+  margin-bottom: 1rem;
 }
 
-/* Blog Date */
 .blog-date {
-  font-size: 14px;
+  font-size: 0.9rem;
   color: #888;
-  margin-top: 15px;
+  margin-bottom: 1rem;
 }
 
-/* Read More Link */
 .read-more {
   display: inline-block;
-  margin-top: 20px;
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 500;
   color: #0073e6;
   text-decoration: none;
@@ -73,56 +76,65 @@
   text-decoration: underline;
 }
 
-/* Responsive Design for Tablets and Smaller Screens */
-@media (max-width: 1024px) {
-  .blog-posts {
-    flex-direction: column; /* Stack blog posts vertically */
-    padding: 0 10px; /* Adjust padding */
-  }
-
-  .blog-post {
-    width: 100%; /* Ensure blog posts take full width */
-    margin-bottom: 20px; /* Add spacing between posts */
+/* Responsive Design */
+@media (max-width: 768px) {
+  .blog-section {
+    padding: 1.5rem 0;
   }
 
   .section-title h2 {
-    font-size: 30px; /* Adjust title font size */
+    font-size: 2rem;
   }
 
   .section-title p {
-    font-size: 16px; /* Adjust description font size */
-  }
-}
-
-/* Responsive Design for Mobile Devices */
-@media (max-width: 768px) {
-  .blog-section {
-    padding: 20px 0; /* Adjust padding */
+    font-size: 1rem;
   }
 
   .blog-posts {
-    flex-direction: column; /* Stack blog posts vertically */
-    gap: 20px; /* Adjust gap */
+    grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
+    gap: 1rem;
   }
 
   .blog-post {
-    width: 100%; /* Ensure blog posts take full width */
-    padding: 15px; /* Adjust padding for smaller screens */
+    padding: 1rem;
   }
 
   .blog-title {
-    font-size: 20px; /* Smaller title font size */
+    font-size: 1.25rem;
   }
 
   .blog-summary {
-    font-size: 14px; /* Smaller summary font size */
+    font-size: 0.9rem;
   }
 
   .blog-date {
-    font-size: 12px; /* Smaller date font size */
+    font-size: 0.8rem;
   }
 
   .read-more {
-    font-size: 12px; /* Smaller font size for the read more link */
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-posts {
+    grid-template-columns: 1fr; /* Single column for mobile */
+    gap: 1rem;
+  }
+
+  .blog-title {
+    font-size: 1.1rem;
+  }
+
+  .blog-summary {
+    font-size: 0.8rem;
+  }
+
+  .blog-date {
+    font-size: 0.75rem;
+  }
+
+  .read-more {
+    font-size: 0.8rem;
   }
 }

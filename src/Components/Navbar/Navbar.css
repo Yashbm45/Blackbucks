@@ -11,16 +11,17 @@ body {
 
 /* Navbar Styles */
 .navbar {
-    color: #000000; /* Reduced padding */
-    position: absolute;
+    color: #000000;
+    position: fixed;
     width: 100%;
-    top: 20px;
+    top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow */
-    height: 90px; /* Ensure navbar height doesn't exceed 50px */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 70px;
     display: flex;
-    align-items: center; /* Vertically center content */
-    justify-content: space-between; /* Ensure space between logo and menu */
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(270deg, hsla(245, 50%, 79%, 0) 8.11%, hsla(245, 32%, 92%, 0.538) 18.36%, hsla(248, 19%, 83%, 0.5) 79.14%, hsla(249, 31%, 84%, 0) 91.72%);
 }
 
 /* Navbar Container */
@@ -28,43 +29,38 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: none;
-    padding: 10px;/* Adjusted padding */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
     width: 100%;
-    height: inherit;
-    /* background: linear-gradient(to right, lightblue 0%, white 100%); */
-    background: linear-gradient(270deg, hsla(245, 50%, 79%, 0) 8.11%, hsla(245, 32%, 92%, 0.538) 18.36%, hsla(248, 19%, 83%, 0.5) 79.14%, hsla(249, 31%, 84%, 0) 91.72%) !important; */
+    height: 100%;
 }
 
 /* Logo Styles */
 .logo a {
     color: inherit;
-    font-size: 40px; /* Reduced font size */
+    font-size: 24px;
     font-weight: bold;
-    padding-top: 0px;
     text-decoration: none;
-    letter-spacing: 0.5px; /* Slightly reduced letter spacing */
+    letter-spacing: 0.5px;
 }
 
 /* Menu Links */
 .menu-links ul {
     list-style: none;
     display: flex;
-    padding-right: 280px;
     margin: 0;
-    font-size: 30px;
-    padding-bottom: 20px;
-    font-weight: bolder;
+    padding: 0;
 }
 
 .menu-links ul li {
-    margin: 0 10px; /* Slightly spaced out menu items */
+    margin: 0 15px;
 }
 
 .menu-links ul li a {
     color: inherit;
-    text-decoration: #000000;
-    font-size: 18px; /* Reduced font size */
+    text-decoration: none;
+    font-size: 16px;
     transition: color 0.3s;
     font-weight: bold;
 }
@@ -81,9 +77,9 @@ body {
 }
 
 .menu-icon .bar {
-    background-color: white;
+    background-color: #000000;
     height: 3px;
-    width: 18px; /* Increased width */
+    width: 25px;
     margin: 4px 0;
 }
 
@@ -93,6 +89,11 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    background: white;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding: 10px 0;
 }
 
 /* Default Menu Visibility (Desktop View) */
@@ -102,25 +103,13 @@ body {
 
 /* Responsive Design for Mobile */
 @media (max-width: 768px) {
-    .navbar{
-        position: fixed;
-    }
     .menu-links {
         display: none;
-        width: 100%;
-        position: absolute;
-        top: 50px; /* Adjusted top position for mobile */
-        left: 0;
-        background: white; 
-        flex-direction: column;
-        align-items: center;
-        padding: 10px 0;
-        height: inherit;
     }
 
     .menu-icon {
         display: flex;
-        z-index: 1001; /* Ensures it stays on top */
+        z-index: 1001;
     }
 
     .menu-links ul {
@@ -135,7 +124,7 @@ body {
 
     .menu-links ul li a {
         font-size: 16px;
-        padding: 10px 0; /* Added padding for better touch area */
+        padding: 10px 0;
     }
 
     /* Active class for toggling the menu */
@@ -148,6 +137,3 @@ body {
 html {
     scroll-behavior: smooth;
 }
-
-/* 
-background: linear-gradient(270deg, hsla(0, 0%, 100%, 0) 8.11%, hsla(0, 0%, 100%, .5) 18.36%, hsla(0, 0%, 100%, .5) 79.14%, hsla(0, 0%, 100%, 0) 91.72%) !important; */

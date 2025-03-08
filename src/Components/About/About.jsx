@@ -10,7 +10,7 @@ const About = () => {
   },
     {
       name: "Suhas Sathe",
-      title: "Tech Lead & Analyast",
+      title: "Tech Lead & Analyst",
       },
     {
       name: "Tejas Khairnar",
@@ -42,7 +42,8 @@ const About = () => {
             His expertise lies in strategic portfolio management, risk assessment, and market analysis. With a passion for helping others achieve financial independence, Chandresh started Phoenix Capitals to share his knowledge and strategies with aspiring investors.
           </p>
         </div>
-        <div className='Team'> 
+    </div>
+    <div className='Team'> 
           <h2>Meet Our Team</h2>
         <div className="founder-profiles-container">
       {foundersData.map((founder) => (
@@ -52,7 +53,6 @@ const About = () => {
           title={founder.title}
         />
       ))}
-    </div>
     </div>
     </div>
 

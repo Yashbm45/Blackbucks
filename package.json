@@ -3,6 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "author": {
+    "name": "Yashwant Mahamuni",
+    "email": "mahamuniyash@gmail.com"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",

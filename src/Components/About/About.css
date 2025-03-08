@@ -1,129 +1,153 @@
 /* About Section */
 .about-section {
-  padding: 10px;
-  padding-left: 120px;
+  padding: 2rem;
   background-color: #f9f9f9;
   color: black;
 }
 
 .section-title {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 .section-title h2 {
-  font-size: 36px;
+  font-size: 2.5rem;
   font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
 .section-title p {
-  font-size: 18px;
+  font-size: 1.25rem;
   color: #555;
-  padding-bottom: 20px;
 }
 
 /* Founder Details */
 .founder-details {
   display: flex;
-  gap: 70px;
-  /* justify-content: center;
-  align-items: center; */
-  /* gap: 40px;
-  margin-bottom: 40px; */
-}
-
-.founder-photo {
-  display: inline-block;
-  align-items: start;
+  flex-direction: row; /* Side by side on desktop */
+  align-items: center;
+  gap: 3rem; /* Space between photo and bio */
+  margin-bottom: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 .founder-photo img {
   border-radius: 10%;
-  width: 250px;
-  height: 350px;
+  width: 300px; /* Adjust photo size */
+  height: 400px;
   object-fit: cover;
 }
 
 .founder-bio {
-  max-width: 500px;
+  flex: 1; /* Take remaining space */
+  text-align: left; /* Align text to the left */
 }
 
 .founder-bio h3 {
-  font-size: 28px;
+  font-size: 2rem;
   font-weight: bold;
   color: #333;
+  margin-bottom: 1rem;
 }
 
 .founder-bio p {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.6;
   color: #555;
+  margin-bottom: 1rem;
 }
 
-.founder-profiles-container{
+/* Meet Our Team Section */
+.Team {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.Team h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.founder-profiles-container {
   display: grid;
-  grid-template-columns: 250px 250px; 
-  /* 3 columns with 200px, 1fr, and 2fr */ 
-  gap: 20px;
-  padding: 10px;
-  margin: 0 auto 0px auto;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 /* Portfolio Details */
 .portfolio-details {
-  margin-top: 50px;
+  margin-top: 2rem;
   text-align: center;
 }
 
 .portfolio-details h3 {
-  font-size: 20px;
+  font-size: 1.75rem;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
 }
 
 .portfolio-stats {
   display: flex;
   justify-content: center;
-  gap: 50px;
-  margin-top: 20px;
+  gap: 2rem;
+  margin-top: 1rem;
 }
 
 .stat {
-  width: 500px;
-  padding: 20px;
+  width: 300px;
+  padding: 1.5rem;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
+  text-align: center;
 }
 
 .stat h4 {
-  font-size: 20px;
+  font-size: 1.5rem;
   font-weight: bold;
+  margin-bottom: 0.75rem;
 }
 
 .stat p {
-  font-size: 14px;
+  font-size: 1rem;
   color: #555;
-  margin-top: 10px;
 }
 
 /* Responsive Design */
+@media (max-width: 1200px) {
+  .founder-details {
+    gap: 2rem; /* Reduce gap for smaller desktops */
+  }
+
+  .founder-photo img {
+    width: 250px;
+    height: 350px;
+  }
+}
+
 @media (max-width: 768px) {
   .about-section {
-    padding: 5px;
-    padding-left: 10px;
+    padding: 1rem;
   }
+
   .section-title h2 {
-    font-size: 28px;
+    font-size: 2rem;
   }
 
   .section-title p {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .founder-details {
-    flex-direction: column;
-    gap: 20px;
+    flex-direction: column; /* Stack photo and bio vertically */
+    align-items: center;
+    gap: 1.5rem;
   }
 
   .founder-photo img {
@@ -132,52 +156,57 @@
   }
 
   .founder-bio {
-    max-width: 100%;
-    text-align: center;
+    text-align: center; /* Center text for mobile */
   }
 
   .founder-bio h3 {
-    font-size: 24px;
+    font-size: 1.75rem;
   }
 
   .founder-bio p {
-    font-size: 14px;
+    font-size: 0.9rem;
   }
 
-  .founder-profiles-container{
-    display: flex;
-    flex-direction: column;
+  .Team h2 {
+    font-size: 1.75rem;
   }
+
+  .founder-profiles-container {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+
   .portfolio-details h3 {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 
   .portfolio-stats {
     flex-direction: column;
-    gap: 20px;
+    gap: 1rem;
   }
 
   .stat {
     width: 100%;
-    padding: 15px;
+    padding: 1rem;
   }
 
   .stat h4 {
-    font-size: 18px;
+    font-size: 1.25rem;
   }
 
   .stat p {
-    font-size: 12px;
+    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 480px) {
   .section-title h2 {
-    font-size: 24px;
+    font-size: 1.75rem;
   }
 
   .section-title p {
-    font-size: 14px;
+    font-size: 0.9rem;
   }
 
   .founder-photo img {
@@ -186,37 +215,32 @@
   }
 
   .founder-bio h3 {
-    font-size: 20px;
+    font-size: 1.5rem;
   }
 
   .founder-bio p {
-    font-size: 12px;
+    font-size: 0.8rem;
   }
 
-  .founder-profiles-container{
-    display: flex;
-    flex-direction: column;
+  .Team h2 {
+    font-size: 1.5rem;
+  }
+
+  .founder-profiles-container {
+    grid-template-columns: 1fr; /* Single column for mobile */
+    gap: 0.75rem;
+    padding: 0.25rem;
   }
 
   .portfolio-details h3 {
-    font-size: 20px;
-  }
-
-  .portfolio-stats {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .stat {
-    width: 100%;
-    padding: 12px;
+    font-size: 1.25rem;
   }
 
   .stat h4 {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .stat p {
-    font-size: 12px;
+    font-size: 0.8rem;
   }
 }

@@ -45,7 +45,7 @@ const Footer = () => {
             <i className="fab fa-linkedin"></i>
           </a>
         </div>
-        <p>&copy; 2025 Arthos | All Rights Reserved</p>
+        <p>&copy; 2025 Black Bucks | All Rights Reserved</p>
       </div>
     </footer>
   );

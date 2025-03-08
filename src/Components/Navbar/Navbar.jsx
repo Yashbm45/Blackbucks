@@ -20,11 +20,11 @@ function Navbar() {
         {/* Menu Links */}
         <div className={`menu-links ${isMenuOpen ? "active" : ""}`}>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/services">Services</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/blog">Contact Us</a></li>
+            <li><a href="#home" onClick={toggleMenu}>Home</a></li>
+            <li><a href="#about" onClick={toggleMenu}>About</a></li>
+            <li><a href="#services" onClick={toggleMenu}>Services</a></li>
+            <li><a href="#blog" onClick={toggleMenu}>Blog</a></li>
+            <li><a href="#contact" onClick={toggleMenu}>Contact Us</a></li>
           </ul>
         </div>
 

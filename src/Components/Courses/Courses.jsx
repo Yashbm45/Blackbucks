@@ -19,19 +19,19 @@ const Courses = () => {
         </div>
         <div className="courses-list">
           <div className="course">
-            <h3>Beginner's Stock Market Course</h3>
+            <h3>Funadaments of Stock Market</h3>
             <p>Learn the fundamentals of the stock market, trading strategies, and risk management.</p>
             <button className="cta-button"><a href='https://forms.gle/YC7AFaEHRt4c1zXi7' style={{color:"white"}}>Enroll Now</a></button>
           </div>
           <div className="course">
-            <h3>Advanced Stock Trading Course</h3>
+            <h3>Master Technical Analysis</h3>
             <p>Master technical analysis, charting, and day trading strategies to boost your profits.</p>
             <a className="cta-button" href="https://forms.gle/YC7AFaEHRt4c1zXi7">Enroll Now</a>
           </div>
           <div className="course">
-            <h3>Arthos Premium Membership</h3>
+            <h3>Risk Management and Advance Statergie</h3>
             <p>Learn how to create an investment portfolio and manage it for long-term growth.</p>
-            <a className="cta-button" href="https://forms.gle/rdBnCPXcqp49DRBT9">Enroll Now</a>
+            <button className="cta-button"> <a href='https://forms.gle/YC7AFaEHRt4c1zXi7'>Enroll Now</a></button>
           </div>
     </div>
     </div>
