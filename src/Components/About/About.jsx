@@ -5,7 +5,7 @@ const About = () => {
   const foundersData = [
     {
       name : "Pushkar Mahajan",
-      title: "CFO & Technical Analyast",
+      title: "CFO & Technical Analyst",
       education: "BE E&TC Engineering",
   },
     {
