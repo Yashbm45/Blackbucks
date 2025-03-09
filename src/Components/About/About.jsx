@@ -14,7 +14,7 @@ const About = () => {
       },
     {
       name: "Tejas Khairnar",
-      title: "Lead Business Analyast",
+      title: "Lead Business Analyst",
     },
     {
       name: "Saurabh Batwal",
