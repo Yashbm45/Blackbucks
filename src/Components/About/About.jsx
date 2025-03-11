@@ -25,7 +25,7 @@ const About = () => {
   return (
     <div className="about-section">
       <div className="section-title">
-        <h2>About Arthos</h2>
+        <h2>About Black Bucks</h2>
         <p>Meet the Founder and Stock Market Expert</p>
       </div>
 
